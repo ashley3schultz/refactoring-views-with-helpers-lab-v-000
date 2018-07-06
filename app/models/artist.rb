@@ -1,6 +1,3 @@
 class Artist < ActiveRecord::Base
-  has_many :songs
-
-  def artist_name=(artist)
-    self.artist ? self.artist.name : nil
+  has_many :songs    
 end
