@@ -1,10 +1,10 @@
 module ArtistsHelper
 
-  def display_artist
-    if self.artist_name
-      link_to artist_name, artist_path(self.artist)
+  def display_artist(song)
+    if song.artist_name
+      link_to artist_name, artist_path(song.artist)
     else
-      link_to 'Add Artist', edit_song_path(self)
+      link_to 'Add Artist', edit_song_path(song)
     end
   end
 
