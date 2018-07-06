@@ -6,4 +6,6 @@ class Song < ActiveRecord::Base
 
   def artist_name=(name)
   end
+
+#self.artist ? self.artist.name : nil
 end
